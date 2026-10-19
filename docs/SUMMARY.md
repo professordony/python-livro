@@ -35,5 +35,3 @@
 
 * [Apêndice A — Soluções dos Exercícios](apendice-a-solucoes.md)
 * [Referências Bibliográficas](referencias.md)
-
-* [Prefácio](abertura.md)
