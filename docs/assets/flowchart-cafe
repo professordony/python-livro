@@ -1,0 +1,24 @@
+digraph cafe {
+	bgcolor=white fontname=Ubuntu rankdir=TB
+	node [fillcolor="#e3f2fd" fontname=Ubuntu fontsize=11 shape=box style=filled]
+	start [label="INÍCIO" fillcolor="#c8e6c9" shape=ellipse]
+	xicara [label="Pegar a xícara"]
+	po [label="Colocar pó de café
+no filtro"]
+	agua [label="Água quente?" fillcolor="#fff9c4" shape=diamond]
+	esquentar [label="Esquentar água"]
+	despejar [label="Despejar água
+no filtro"]
+	coar [label="Aguardar coar"]
+	servir [label="Servir o café"]
+	end [label=FIM fillcolor="#ffcdd2" shape=ellipse]
+	start -> xicara
+	xicara -> po
+	po -> agua
+	agua -> esquentar [label="Não"]
+	esquentar -> agua
+	agua -> despejar [label=Sim]
+	despejar -> coar
+	coar -> servir
+	servir -> end
+}
